@@ -1,0 +1,8 @@
+<launch>
+
+    <node name="pcd_reader" output="screen" pkg="duo_slam" type="pcd_reader">
+
+    </node>
+
+
+</launch>

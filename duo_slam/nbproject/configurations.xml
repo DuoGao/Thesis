@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="nodes">
+          <in>cuda_testing.cpp</in>
+          <in>pcd_reader.cpp</in>
+          <in>slamdunk_fusion.cpp</in>
+          <in>slamdunk_tracker.cpp</in>
+          <in>slamdunk_tracker_2dmap.cpp</in>
+          <in>slamdunk_tracker_gpu.cpp</in>
+          <in>slamdunk_tracker_gpu_faster.cpp</in>
+          <in>testing.cpp</in>
+        </df>
+        <df name="slamdunk">
+          <in>data.cpp</in>
+          <in>edge_se3_xyzpair.cpp</in>
+          <in>feature_matcher.cpp</in>
+          <in>feature_tracker.cpp</in>
+          <in>gpu_features.cpp</in>
+          <in>graph_backend.cpp</in>
+          <in>graph_utils.cpp</in>
+          <in>slam_dunk.cpp</in>
+          <in>transformation_estimation.cpp</in>
+        </df>
+        <df name="slamdunk_extension">
+          <df name="cuda">
+            <in>CudaTsdf.cpp</in>
+          </df>
+          <in>Map_3D.cpp</in>
+          <in>Map_3D_new.cpp</in>
+          <in>PlaneFinder.cpp</in>
+          <in>SlamDunkScene.cpp</in>
+          <in>Two_D_Map.cpp</in>
+          <in>Utility.cpp</in>
+          <in>tf_listener.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>../../build/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>../../build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11 -fopenmp -O3"/>
+        <element flagsID="1" commonFlags="-std=c++11 -fopenmp -O3 -fPIC"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../../build</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>../../build</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCATKIN_DEVEL_SPACE=../devel -DCMAKE_INSTALL_PREFIX=../install ../src/duo_slam</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/src/slamdunk">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <item path="src/nodes/cuda_testing.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/nodes/pcd_reader.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/nodes/slamdunk_fusion.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/nodes/slamdunk_tracker.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/nodes/slamdunk_tracker_2dmap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/nodes/slamdunk_tracker_gpu.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/nodes/slamdunk_tracker_gpu_faster.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/nodes/testing.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/slamdunk/data.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/edge_se3_xyzpair.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/feature_matcher.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/feature_tracker.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/gpu_features.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/graph_backend.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/graph_utils.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/slam_dunk.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk/transformation_estimation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/Map_3D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/Map_3D_new.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/slamdunk_extension/PlaneFinder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/SlamDunkScene.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/Two_D_Map.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/Utility.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="src/slamdunk_extension/cuda/CudaTsdf.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/slamdunk_extension/tf_listener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>/usr/include/vtk-5.8</pElem>
+            <pElem>/usr/include/pcl-1.7</pElem>
+            <pElem>/usr/include/eigen3</pElem>
+            <pElem>/usr/include/ni</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>include</pElem>
+            <pElem>include/slamdunk</pElem>
+            <pElem>include/slamdunk_extension</pElem>
+            <pElem>..</pElem>
+            <pElem>/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../devel/include</pElem>
+            <pElem>../../build/duo_slam</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BOOST_DISABLE_ASSERTS</Elem>
+            <Elem>EIGEN_USE_NEW_STDVECTOR</Elem>
+            <Elem>EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET</Elem>
+            <Elem>FLANN_STATIC</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="duo_slam"</Elem>
+            <Elem>UNIX</Elem>
+            <Elem>qh_QHpointer</Elem>
+            <Elem>slamdunk_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

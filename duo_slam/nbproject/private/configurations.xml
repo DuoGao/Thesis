@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="cmake">
+        <df name="Modules">
+        </df>
+      </df>
+      <df name="include">
+        <df name="slamdunk">
+          <df name="impl">
+            <in>ratio_matcher.hpp</in>
+          </df>
+          <in>camera_tracker.h</in>
+          <in>data.h</in>
+          <in>edge_se3_xyzpair.h</in>
+          <in>feature_matcher.h</in>
+          <in>gpu_features.h</in>
+          <in>graph_backend.h</in>
+          <in>graph_utils.h</in>
+          <in>pretty_printer.h</in>
+          <in>quadtree.h</in>
+          <in>slam_dunk.h</in>
+          <in>slamdunk_defines.h</in>
+          <in>transformation_estimation.h</in>
+        </df>
+        <df name="slamdunk_extension">
+          <df name="cuda">
+            <in>CudaTsdf.h</in>
+            <in>commons.hpp</in>
+            <in>tsdf_cuda.h</in>
+          </df>
+          <in>Map_3D.h</in>
+          <in>Map_3D_new.h</in>
+          <in>PlaneFinder.h</in>
+          <in>SlamDunkScene.h</in>
+          <in>Two_D_Map.h</in>
+          <in>Utility.h</in>
+          <in>tf_listener.h</in>
+        </df>
+      </df>
+      <df name="launch">
+      </df>
+      <df name="src">
+        <df name="nodes">
+          <in>cuda_testing.cpp</in>
+          <in>pcd_reader.cpp</in>
+          <in>slamdunk_fusion.cpp</in>
+          <in>slamdunk_tracker.cpp</in>
+          <in>slamdunk_tracker_2dmap.cpp</in>
+          <in>slamdunk_tracker_gpu.cpp</in>
+          <in>slamdunk_tracker_gpu_faster.cpp</in>
+          <in>testing.cpp</in>
+        </df>
+        <df name="slamdunk">
+          <in>data.cpp</in>
+          <in>edge_se3_xyzpair.cpp</in>
+          <in>feature_matcher.cpp</in>
+          <in>feature_tracker.cpp</in>
+          <in>gpu_features.cpp</in>
+          <in>graph_backend.cpp</in>
+          <in>graph_utils.cpp</in>
+          <in>internal_timers.hpp</in>
+          <in>slam_dunk.cpp</in>
+          <in>transformation_estimation.cpp</in>
+        </df>
+        <df name="slamdunk_extension">
+          <df name="cuda">
+            <in>CudaTsdf.cpp</in>
+          </df>
+          <in>Map_3D.cpp</in>
+          <in>Map_3D_new.cpp</in>
+          <in>PlaneFinder.cpp</in>
+          <in>SlamDunkScene.cpp</in>
+          <in>Two_D_Map.cpp</in>
+          <in>Utility.cpp</in>
+          <in>tf_listener.cpp</in>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>../../build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>../../build</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

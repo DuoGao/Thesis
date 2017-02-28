@@ -1,0 +1,52 @@
+
+<launch>
+
+    <node name="slamdunk_tracker" output="screen" pkg="lar_slam" type="slamdunk_tracker">
+
+        <param name="hz" value="30"/>
+        <param name="cores" value="4"/>
+        <param name="viz" value="true"/>
+        <param name="build_environment" value="true"/>
+        <param name="tracker_start_time" value="0.5"/>
+
+        <!--        <param name="camera_rgb_topic" value="/xtion/rgb/image_raw"/>
+        <param name="camera_depth_topic" value="/xtion/depth/image_raw"/>-->
+        <param name="camera_rgb_topic" value="/camera/rgb/image_raw"/>
+        <param name="camera_depth_topic" value="/camera/depth/image_raw"/>
+        <param name="camera_pose_topic" value="/camera/pose"/><!-- SLAM OUTPUT TOPIC -->
+
+        
+        <!--  ASUS2 -->     
+        <param name="fx" value="530.568473"/>
+        <param name="fy" value="522.001214"/>
+        <param name="cx" value="317.586978"/>
+        <param name="cy" value="241.580821"/>
+        
+        <!-- ASUS 1
+        <param name="fx" value="542.461710"/>
+        <param name="fy" value="543.536535"/>
+        <param name="cx" value="311.081384"/>
+        <param name="cy" value="236.535761"/>
+        <param name="exclusion_percentage" value="-1"/> -->
+        
+        <param name="rows" value="480"/>
+        <param name="cols" value="640"/>
+        <param name="depth_scale_factor" value="0.0002"/>
+
+
+        <param name="rings" value="3"/>
+        <param name="kf_overlapping" value="0.9"/>
+        <param name="loop_inference" value="false"/>
+        <param name="doicp" value="false"/>
+        <param name="icp_distance" value="0.2"/>
+        <param name="icp_normal" value="30.0"/>
+        <param name="verbose" value="false"/>
+
+        <param name="features" value="surfext"/>
+        <param name="winl" value="6.0"/>
+        <param name="feat_redux" value="false"/>
+
+    </node>
+
+
+</launch>
