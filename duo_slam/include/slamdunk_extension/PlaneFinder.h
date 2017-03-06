@@ -1,15 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/* 
- * File:   PlaneFinder.h
- * Author: daniele
- *
- * Created on June 21, 2016, 10:37 PM
- */
 
 #ifndef PLANEFINDER_H
 #define PLANEFINDER_H
