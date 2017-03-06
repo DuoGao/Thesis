@@ -1,15 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/* 
- * File:   SlamDunkScene.h
- * Author: daniele
- *
- * Created on June 16, 2016, 4:51 PM
- */
 
 #ifndef SLAMDUNKSCENE_H
 #define SLAMDUNKSCENE_H
