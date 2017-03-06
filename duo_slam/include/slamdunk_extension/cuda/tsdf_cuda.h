@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   tsdf_cuda.h
- * Author: daniele
- *
- * Created on July 15, 2016, 12:22 PM
- */
 
 #ifndef TSDF_CUDA_H
 #define TSDF_CUDA_H
